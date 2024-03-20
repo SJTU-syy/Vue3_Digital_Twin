@@ -1,11 +1,3 @@
-<!--
- * @Description: 
- * @Version: 1.668
- * @Autor: 地虎降天龙
- * @Date: 2023-11-18 22:17:49
- * @LastEditors: 地虎降天龙
- * @LastEditTime: 2024-03-12 10:49:58
--->
 <template>
     <div class="flex h-full">
         <div class="w-50" style="background-color: #0f1222;">
@@ -26,7 +18,7 @@
                     <template #icon>
                         <PictureOutlined />
                     </template>
-                    <template #label>插件中心</template>
+                    <template #label>进阶效果</template>
                     <template v-for="(onePlugin, pkey) in  pluginsConfig ">
                         <f-menu-item v-if="pkey !== 'basic'" :value="pkey">
                             <template #label>
