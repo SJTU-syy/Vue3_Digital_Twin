@@ -13,15 +13,15 @@
 		<TresAmbientLight :intensity="1" />
 		<TresDirectionalLight :position="[10, 8, 4]" :intensity="1" />
 
-		<TresMesh ref="sphereRef" :position="[3, 3, 0]">
+		<!-- <TresMesh ref="sphereRef" :position="[3, 3, 0]">
 			<TresSphereGeometry :args="[1, 32, 32]" />
 			<TresMeshToonMaterial color="#006060" />
-		</TresMesh>
+		</TresMesh> -->
 
-		<TresMesh :rotation="[-Math.PI / 2, 0, 0]">
+		<!-- <TresMesh :rotation="[-Math.PI / 2, 0, 0]">
 			<TresPlaneGeometry :args="[20, 20, 20, 20]" />
 			<TresMeshToonMaterial />
-		</TresMesh>
+		</TresMesh> -->
 
 		<TresGridHelper />
 

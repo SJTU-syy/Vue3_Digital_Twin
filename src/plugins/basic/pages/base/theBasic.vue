@@ -2,7 +2,7 @@
   <TresCanvas v-bind="state" window-size>
     <TresPerspectiveCamera :position="[15, 15, 15]" :fov="45" :near="0.1" :far="1000" :look-at="[0, 0, 0]" />
     <OrbitControls v-bind="controlsState" />
-    <TresAmbientLight :intensity="0.5" />
+    <TresAmbientLight color="#060606" :intensity="0.5" />
 
     <TresMesh ref="sphereRef" :position="[0, 4, 0]" cast-shadow @pointer-enter="onPointerEnter"
       @pointer-leave="onPointerLeave">

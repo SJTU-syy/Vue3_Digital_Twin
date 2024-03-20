@@ -1,8 +1,14 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
 import { TresCanvas } from '@tresjs/core'
+import { useFBX } from '@tresjs/cientos'
+// import modelVue from '../../components/model.vue'
 import { BasicShadowMap, SRGBColorSpace, NoToneMapping } from 'three'
 import { OrbitControls, TransformControls, useTweakPane } from '@tresjs/cientos'
+
+//这里要写完整路径，已成功加载
+const model = await useFBX('./plugins/basic/controls/model/UEmodel03.fbx');
+console.log(model);
 
 const gl = {
   clearColor: '#82DBC5',
@@ -112,5 +118,12 @@ pane.addBinding(controlsState, 'showZ', { label: '显示Z轴' })
     </TresMesh>
     <TresAmbientLight :intensity="1" />
     <TresGridHelper />
+
+
+    <primitive :object="model" :position="[3, 3, 3]"/>
+
+
   </TresCanvas>
 </template>
+
+

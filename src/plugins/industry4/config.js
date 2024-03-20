@@ -20,6 +20,6 @@ export default {
 		{ "src": "plugins/industry4/preview/deviceLight.png", "type": "img", "name": "deviceLight", "title": "设备发光" },
 		{ "src": "plugins/industry4/preview/deviceLightReflector.png", "type": "img", "name": "deviceLightReflector", "title": "设备发光+镜面" },
 		{ "src": "plugins/industry4/preview/planeClipping.png", "type": "img", "name": "planeClipping", "title": "飞机剖面" },
-		// { "src": "plugins/industry4/preview/deviceLight.png", "type": "img", "name": "deviceLightByComposerTres", "title": "发光后期useTres" },
+		{ "src": "plugins/industry4/preview/deviceLight.png", "type": "img", "name": "deviceLightByComposerTres", "title": "发光后期useTres" },
 	]
 }

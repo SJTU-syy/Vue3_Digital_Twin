@@ -27,6 +27,8 @@ const paneElements = ref({
 	groupVisible: true,
 	boxPropMaterialVisible: true,
 })
+
+
 const boxRef = ref(null)
 const boxVisible = ref(true)
 let pane = null as any
@@ -50,6 +52,9 @@ onUnmounted(() => {
 	}
 })
 
+//第一个参数是一个函数，返回需要被监听的响应式数据，这里是 boxVisible。
+// 第二个参数是一个回调函数，会在 boxVisible 改变时被调用，参数 newVal 是新的值，oldVal 是旧的值。在这段代码中，如果 oldVal 不是 undefined，则将 boxRef 的 visible 属性设置为 newVal.value。
+// 第三个参数是一个配置对象，这里使用 { deep: true } 来深度监听 boxVisible，即如果 boxVisible 是一个对象或数组，会递归监听其属性或元素的变化。
 watch(
 	() => boxVisible,
 	(newVal, oldVal) => {
@@ -59,6 +64,7 @@ watch(
 	},
 	{ deep: true }
 )
+
 const material = new MeshPhongMaterial({ color: '#ff0000' })
 </script>
 

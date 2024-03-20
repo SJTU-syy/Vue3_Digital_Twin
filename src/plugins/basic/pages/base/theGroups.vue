@@ -1,11 +1,3 @@
-<!--
- * @Description: 
- * @Version: 1.668
- * @Autor: Hawk
- * @Date: 2023-09-22 10:56:32
- * @LastEditors: 地虎降天龙
- * @LastEditTime: 2023-11-03 16:35:27
--->
 <script setup lang="ts">
 import { TresCanvas, useRenderLoop } from '@tresjs/core'
 import { ref } from 'vue'

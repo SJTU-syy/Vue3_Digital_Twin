@@ -1,11 +1,4 @@
-<!--
- * @Description: 
- * @Version: 1.668
- * @Autor: 地虎降天龙
- * @Date: 2024-01-09 17:15:51
- * @LastEditors: 地虎降天龙
- * @LastEditTime: 2024-02-01 17:52:32
--->
+
 <template>
 	<Box :args="[1, 1, 1]" color="orange" :position="[3, 2, 1]" />
 	<!-- <TresMesh :position="[0, 2, -4]">
