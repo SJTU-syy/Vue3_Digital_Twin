@@ -21,7 +21,7 @@ let originalUrl = window.location.href
 let hashPart = originalUrl.split('#')[1] || ''
 let parts = hashPart.split('/')
 
-let baseUrl = 'https://gitee.com/ice-gl/icegl-three-vue-tres/blob/master/src'
+let baseUrl = 'https://github.com/SJTU-syy/Vue3_Digital_Twin'
 let newUrl = `${baseUrl}/${parts[1]}/${parts[2]}/pages/${parts.slice(3).join('/')}.vue`
 console.log('源码地址', newUrl)
 

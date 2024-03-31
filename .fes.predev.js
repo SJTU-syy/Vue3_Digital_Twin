@@ -8,13 +8,14 @@
  */
 import { defineBuildConfig } from '@fesjs/fes';
 
+
+//这里是配置的编辑处
 export default defineBuildConfig({
     layout: {
-        title: 'TvT.js',
+        title: '数字孪生毕设',
         navigation: 'top',
         multiTabs: false,
         isFixedHeader: true,
-        logo: 'logo.png',
         menus: [
             {
                 name: 'preview',
@@ -22,16 +23,12 @@ export default defineBuildConfig({
                 title: '📀 预览演示'
             },
             {
-                path: 'https://gitee.com/ice-gl/icegl-three-vue-tres',
-                title: '📜 源码地址'
+                path: 'https://github.com/SJTU-syy/Vue3_Digital_Twin',
+                title: '📜 工程源码'
             },
             {
                 title: '📚 说明文档',
-                children: [
-                    {
-                        path: 'http://docs.icegl.cn',
-                        title: '🧊 TvT框架文档'
-                    }, {
+                children: [{
                         path: 'https://threejs.org/docs/index.html#manual/zh/introduction/Creating-a-scene',
                         title: '🎲 three.js'
                     }, {
@@ -44,36 +41,17 @@ export default defineBuildConfig({
                 ]
             },
             {
-                path: 'https://icegl.cn/',
-                title: '🧊 ICEGL官网'
+                path: 'https://skitter-surgeon-40d.notion.site/BUG-a5440aa5d23e4c76addfc4a8f6b7a0eb?pvs=73',
+                title: '🙋‍♀️ Notion反馈'
             },
             {
-                path: 'https://space.bilibili.com/410503457',
-                title: '🅱️ B站主页'
+                path: 'http://www.cloudready.cn/',
+                title: '💫 公司主页'
             },
             {
-                title: '👨‍🏫 课程中心',
-                children: [
-                    {
-                        path: 'https://icegl.cn/courses',
-                        title: '🌁 WebGL初/中/高级教程'
-                    }, {
-                        path: 'https://www.bilibili.com/video/BV1iR4y1C7LQ/',
-                        title: '🏙 WebGL Shader初级教程'
-                    }, {
-                        path: 'https://study.163.com/course/introduction/1213599804.htm?inLoc=ss_ssjg_tjlb_webgl&share=1&shareId=1033552384',
-                        title: '🌇 WebGL Shader中级教程'
-                    },
-                ]
+                path: 'https://me.sjtu.edu.cn/bysj/',
+                title: '🖼️交大毕设'
             },
-            {
-                path: 'https://icegl.cn/ask',
-                title: '🙋‍♀️ 社区问答'
-            },
-            {
-                path: 'https://icegl.cn/p/aboutus',
-                title: '💫 关于我们'
-            }
         ],
     },
 });
