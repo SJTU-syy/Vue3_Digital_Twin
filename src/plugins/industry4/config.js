@@ -1,12 +1,3 @@
-/*
- * @Description: 
- * @Version: 1.668
- * @Autor: 地虎降天龙
- * @Date: 2023-11-10 16:11:27
- * @LastEditors: 地虎降天龙
- * @LastEditTime: 2024-01-05 20:57:24
- */
-
 export default {
 	"name": "industry4",
 	"title": "工业4.0",

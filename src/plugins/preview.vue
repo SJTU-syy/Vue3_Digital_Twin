@@ -66,6 +66,9 @@ let pluginsConfig = getPluginsConfig()
 const goto = (value: string) => {
     tabListRef.value[value.value]?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: "nearest" })
 }
+
+
+//是不是新插件
 const isNew = ((time: string) => {
     if (time) {
         const targetDate = new Date(time)

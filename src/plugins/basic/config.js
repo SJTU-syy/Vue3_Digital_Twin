@@ -1,11 +1,4 @@
-/*
- * @Description: 
- * @Version: 1.668
- * @Autor: 地虎降天龙
- * @Date: 2023-11-03 15:07:09
- * @LastEditors: 地虎降天龙
- * @LastEditTime: 2024-01-31 11:59:12
- */
+
 export default {
 	"name": "basic",
 	"title": "原生功能展示",

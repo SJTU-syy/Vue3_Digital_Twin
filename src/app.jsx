@@ -11,9 +11,13 @@ import { FMenu } from '@fesjs/fes-design';
 import PageLoading from '@/components/pageLoading.vue';
 import UserCenter from '@/components/userCenter.vue';
 
-// add by 地虎降天龙
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
 import 'uno.css';
 
+
+//是否开启登录功能
 export default defineRuntimeConfig({
     beforeRender: {
         loading: <PageLoading />,
@@ -37,10 +41,15 @@ export default defineRuntimeConfig({
     },
 });
 
+//把app需要声明用的组件挂载到这里
 export function onAppCreated ({ app }) {
     app.use(FMenu);
+    app.use(ElementPlus);
 }
 
+
+
+//以下都是路由跳转设置
 const findStringBetween = (str) => {
     const regex = /plugins\/([^/]+)\/pages\//;
     const match = str.match(regex);
